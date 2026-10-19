@@ -419,6 +419,32 @@ button {
   filter: drop-shadow(0 26px 20px rgba(106,45,53,0.12));
 }
 
+.envelope-hint {
+  margin: -0.35rem 0 0;
+  color: var(--burgundy);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.envelope-hint span {
+  display: inline-block;
+  margin-inline-start: 0.25rem;
+  animation: envelope-nudge 1.4s ease-in-out infinite;
+}
+
+.envelope.open + .envelope-hint,
+.final-envelope.open + .envelope-hint {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes envelope-nudge {
+  50% {
+    transform: translateY(4px);
+  }
+}
+
 .letter-content,
 .final-letter {
   width: min(100%, 760px);

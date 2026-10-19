@@ -255,7 +255,7 @@ button {
 
 .hero-mark {
   display: grid;
-  grid-template-columns: repeat(4, minmax(40px, 1fr));
+  grid-template-columns: repeat(5, minmax(40px, 1fr));
   gap: 0.7rem;
   padding: 1rem;
   justify-items: center;
